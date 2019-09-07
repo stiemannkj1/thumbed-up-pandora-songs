@@ -1,7 +1,7 @@
 # List Thumbed Up Pandora Songs
 
 This program is a simple script to list all the thumbed up songs from a
-http://pandora.com/ station.
+https://pandora.com/ station.
 
 ## Usage
 
@@ -28,9 +28,9 @@ To list all the thumbed up songs from a Pandora station:
 
 		chmod +x thumbed-up-pandora-songs.sh
 
-3. Run the file with a http://pandora.com station URL:
+3. Run the file with a https://pandora.com station URL:
 
-		./thumbed-up-pandora-songs.sh http://www.pandora.com/station/play/0000000000000000000
+		./thumbed-up-pandora-songs.sh https://www.pandora.com/station/play/0000000000000000000
 
 	Alternatively you can run the file from your file manager:
 
@@ -64,7 +64,7 @@ If you want to sort the output on the command line, remove the header with `tail
 option and the semicolon (`;`) delimiter with the `-t` option. For example, you
 can sort by artist first and title second like so:
 
-	./thumbed-up-pandora-songs.sh http://www.pandora.com/station/play/0000000000000000000 | \
+	./thumbed-up-pandora-songs.sh https://www.pandora.com/station/play/0000000000000000000 | \
 	tail -n +2 | sort -t';' -k2,2 -k1,1
 
 #### Dependencies
@@ -72,7 +72,7 @@ can sort by artist first and title second like so:
 `thumbed-up-pandora-songs.sh` depends on:
 
 - [`bash`](https://www.gnu.org/software/bash/)
-- [`curl`](http://curl.haxx.se/) or [`wget`](https://www.gnu.org/software/wget/)
+- [`curl`](https://curl.haxx.se/) or [`wget`](https://www.gnu.org/software/wget/)
 - [`sed`](https://www.gnu.org/software/sed/) (either GNU or BSD)
 
 **Note:** OSX and most Linux distros package these programs in their default
@@ -87,9 +87,9 @@ installation.
 The code is licensed under the MIT license. This document is licensed under the Creative Commons Attribution 4.0 International License.
 
 <p align="center">
-	<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+	<a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
 		<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
 	</a>
 	<br />
-	<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type"> <em>List Thumbed Up Pandora Songs README.md</em> </span> by <a xmlns:cc="http://creativecommons.org/ns#" rel="cc:attributionURL" href="https://github.com/stiemannkj1/thumbed-up-pandora-songs/blob/master/README.md" property="cc:attributionName"> Kyle J. Stiemann </a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+	<span xmlns:dct="https://purl.org/dc/terms/" href="https://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type"> <em>List Thumbed Up Pandora Songs README.md</em> </span> by <a xmlns:cc="https://creativecommons.org/ns#" rel="cc:attributionURL" href="https://github.com/stiemannkj1/thumbed-up-pandora-songs/blob/master/README.md" property="cc:attributionName"> Kyle J. Stiemann </a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 </p>
