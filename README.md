@@ -65,6 +65,14 @@ can sort by artist first and title second like so:
 	./thumbed-up-pandora-songs.sh https://www.pandora.com/station/play/0000000000000000000 | \
 	tail -n +2 | sort -t';' -k2,2 -k1,1
 
+#### Examples
+
+* Search for each song on YouTube in a new tab in Chrome (opens 10 new tabs each time "y" is entered to avoid slowing down the browser with too many new tabs):
+
+        ./thumbed-up-pandora-songs.sh https://www.pandora.com/station/play/0000000000000000000 | \
+            sed -E -e 's|[^0-9a-zA-Z]+|+|g' -e 's|^|https://www.youtube.com/results?search_query=|' | \
+             xargs -L 10 -p google-chrome --new-tab
+
 #### Dependencies
 
 `thumbed-up-pandora-songs.sh` depends on:
