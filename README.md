@@ -12,17 +12,17 @@ To list all the thumbed up songs from a Pandora station:
 1. Download `thumbed-up-pandora-songs.sh`:
 
 	- Browse to [the raw text version of
-	`thumbed-up-pandora-songs.sh`](https://raw.githubusercontent.com/stiemannkj1/thumbed-up-pandora-songs/1.0/thumbed-up-pandora-songs.sh).
+	`thumbed-up-pandora-songs.sh`](https://raw.githubusercontent.com/stiemannkj1/thumbed-up-pandora-songs/1.1/thumbed-up-pandora-songs.sh).
 	- Right-click and select *Save As...*
 	- Name the file `thumbed-up-pandora-songs.sh`.
 
 	Or use `curl`:
 
-		curl -o thumbed-up-pandora-songs.sh 'https://raw.githubusercontent.com/stiemannkj1/thumbed-up-pandora-songs/1.0/thumbed-up-pandora-songs.sh'
+		curl -o thumbed-up-pandora-songs.sh 'https://raw.githubusercontent.com/stiemannkj1/thumbed-up-pandora-songs/1.1/thumbed-up-pandora-songs.sh'
 
 	Or use `wget`:
 
-		wget 'https://raw.githubusercontent.com/stiemannkj1/thumbed-up-pandora-songs/1.0/thumbed-up-pandora-songs.sh'
+		wget 'https://raw.githubusercontent.com/stiemannkj1/thumbed-up-pandora-songs/1.1/thumbed-up-pandora-songs.sh'
 
 2. Make the file executable:
 
