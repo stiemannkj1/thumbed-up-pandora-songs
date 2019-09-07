@@ -40,9 +40,7 @@ To list all the thumbed up songs from a Pandora station:
 
 		**Note:** In the OSX *Choose Application* window, you may need to
 		enable *All Applications*:
-		<p align="center">
 		![Enable All Applications.](./choose-application.jpg)
-		</p>
 
 The program will output a list of songs and the song's artist delimited by
 semicolons (`;`). The list is sorted by artist.
