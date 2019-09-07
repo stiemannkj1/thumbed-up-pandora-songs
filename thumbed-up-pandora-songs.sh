@@ -49,16 +49,18 @@ fi
 
 STATION_ID="$STATION_URL"
 STATION_ID="${STATION_ID#http://www.pandora.com/station/play/}"
+STATION_ID="${STATION_ID#https://www.pandora.com/station/play/}"
 STATION_ID="${STATION_ID#http://www.pandora.com/station/}"
+STATION_ID="${STATION_ID#https://www.pandora.com/station/}"
 STATION_ID="${STATION_ID%[?]*}"
 
 if [[ "$STATION_ID" =~ [^0-9] ]]; then
 	printf 'Please enter a valid pandora.com station URL of the form:\n'
-	printf 'http://www.pandora.com/station/play/0000000000000000000\n'
+	printf 'https://www.pandora.com/station/play/0000000000000000000\n'
 	exit 1
 fi
 
-THUMBS_BASE_URL="http://www.pandora.com/content/station_track_thumbs"
+THUMBS_BASE_URL="https://www.pandora.com/content/station_track_thumbs"
 DELIMITER=";"
 
 get_thumbed_up_songs() {
